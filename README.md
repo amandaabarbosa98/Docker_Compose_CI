@@ -94,3 +94,14 @@ Este repositório contém a conteinerização e automação de CI/CD para a apli
 ### Parte 5 & 6 — CI com GitHub Actions
 * **Acertos:** Implementação completa da esteira de automação (validação de sintaxe, build, inicialização da stack, smoke test via `curl` e encerramento limpo da stack).
 * **Dificuldades/Erros:** Ajustar o *loop* de espera (`sleep`) na etapa de aquecimento para garantir que o container estivesse 100% pronto antes da execução do *smoke test*.
+
+## ✅ Checklist de Entrega
+
+- [x] Repositório **público** no GitHub com histórico de commits (sem commit único "final")
+- [x] `Dockerfile` multi-stage funcional + `.dockerignore`
+- [x] `compose.yaml` com rede, volume nomeado, variáveis de ambiente e `healthcheck`
+- [x] `.env.example` versionado e `.env` ignorado
+- [x] Workflow do GitHub Actions funcionando
+- [x] Um PR com o CI vermelho e depois verde (histórico visível)
+- [x] README preenchido com todos os prints pedidos e as respostas das perguntas
+- [x] Link do repositório enviado ao professor
