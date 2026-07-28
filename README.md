@@ -1,3 +1,4 @@
+<!-- comentario -->
 # Atividade Prática — Docker + Compose + CI
 
 **Curso:** Desenvolvimento Fullstack  
