@@ -101,53 +101,53 @@ Este repositório contém a conteinerização e automação de CI/CD para a apli
 ## 📦 CD — Publicação no Docker Hub
 
 * **Aluno(a):** Amanda Barbosa[cite: 2]  
-* **Turma:** Fullstack ITEAM — Módulo DevOps[cite: 1, 2]  
-* **Usuário do Docker Hub:** `amandaabarbosa98`[cite: 2]  
-* **Imagem publicada:** `amandaabarbosa98/meu-projeto-docker:latest`[cite: 2]  
-* **Link da imagem no Docker Hub:** [https://hub.docker.com/r/amandaabarbosa98/meu-projeto-docker](https://hub.docker.com/r/amandaabarbosa98/meu-projeto-docker)[cite: 2]  
-* **Dispara quando:** Push na branch `main`[cite: 2]  
-* **Arquivo do workflow:** `.github/workflows/cd.yml`[cite: 2]  
+* **Turma:** Fullstack ITEAM — Módulo DevOps  
+* **Usuário do Docker Hub:** `amandaabarbosa98`  
+* **Imagem publicada:** `amandaabarbosa98/meu-projeto-docker:latest` 
+* **Link da imagem no Docker Hub:** [https://hub.docker.com/r/amandaabarbosa98/meu-projeto-docker](https://hub.docker.com/r/amandaabarbosa98/meu-projeto-docker)
+* **Dispara quando:** Push na branch `main`
+* **Arquivo do workflow:** `.github/workflows/cd.yml`  
 
 * **Print 1 — Token criado no Docker Hub:**  
-  ![Token criado no Docker Hub](docs/imagens/10-dockerhub-token.png)[cite: 2]
+  ![Token criado no Docker Hub](docs/imagens/10-dockerhub-token.png)
 
 * **Print 2 — Secrets cadastrados no GitHub (`DOCKERHUB_USERNAME` e `DOCKERHUB_TOKEN`):**  
-  ![Secrets no GitHub](docs/imagens/11-github-secrets.png)[cite: 2]
+  ![Secrets no GitHub](docs/imagens/11-github-secrets.png)
 
 * **Print 3 — Workflow de CD verde na aba Actions:**  
-  ![Workflow CD Verde](docs/imagens/12-cd-actions-verde.png)[cite: 2]
+  ![Workflow CD Verde](docs/imagens/12-cd-actions-verde.png)
 
 * **Print 4 — Imagem publicada no Docker Hub:**  
-  ![Imagem no Docker Hub](docs/imagens/13-dockerhub-imagem.png)[cite: 2]
+  ![Imagem no Docker Hub](docs/imagens/13-dockerhub-imagem.png)
 
 * **Print 5 — `docker pull` baixando a imagem publicada:**  
-  ![Docker Pull](docs/imagens/14-docker-pull.png)[cite: 2]
+  ![Docker Pull](docs/imagens/14-docker-pull.png)
 
-### Respostas[cite: 2]
+### Respostas
 
 1. **O que é o Docker Hub?**  
-   É um registro público e remoto de imagens Docker na nuvem (análogo ao GitHub para código)[cite: 1]. Ele permite armazenar, versionar, distribuir e compartilhar imagens de containers prontas para execução em qualquer ambiente[cite: 1].
+   É um registro público e remoto de imagens Docker na nuvem (análogo ao GitHub para código). Ele permite armazenar, versionar, distribuir e compartilhar imagens de containers prontas para execução em qualquer ambiente.
 
 2. **Diferença entre CI e CD:**  
-   O **CI (Continuous Integration)** foca na validação do código, automatizando builds e testes a cada envio para garantir estabilidade[cite: 1]. O **CD (Continuous Delivery/Deployment)** assume após o CI ser aprovado, automatizando o empacotamento e a entrega contínua do artefato final (a imagem Docker) na prateleira/registro para uso final[cite: 1].
+   O **CI (Continuous Integration)** foca na validação do código, automatizando builds e testes a cada envio para garantir estabilidade. O **CD (Continuous Delivery/Deployment)** assume após o CI ser aprovado, automatizando o empacotamento e a entrega contínua do artefato final (a imagem Docker) na prateleira/registro para uso final.
 
 3. **Por que usar token e Secrets em vez de escrever usuário e senha no `cd.yml`?**  
-   Por segurança[cite: 1]. Escrever credenciais diretamente em um arquivo do repositório expõe sua senha publicamente no Git[cite: 1]. As Secrets funcionam como um cofre criptografado e o Personal Access Token concede uma autorização com escopo limitado que pode ser revogada sem alterar a senha principal da conta[cite: 1].
+   Por segurança[cite: 1]. Escrever credenciais diretamente em um arquivo do repositório expõe sua senha publicamente no Git. As Secrets funcionam como um cofre criptografado e o Personal Access Token concede uma autorização com escopo limitado que pode ser revogada sem alterar a senha principal da conta.
 
 4. **O que significa a tag `latest`?**  
-   Indica a versão padrão e mais recente (*latest build*) publicada de uma imagem em um repositório[cite: 1]. Ela aponta automaticamente para a última build gerada na branch principal quando nenhuma tag numérica de versão é especificada.
+   Indica a versão padrão e mais recente (*latest build*) publicada de uma imagem em um repositório. Ela aponta automaticamente para a última build gerada na branch principal quando nenhuma tag numérica de versão é especificada.
 
 ---
 
 ## ✅ Checklist de Entrega
 
-- [x] Repositório **público** no GitHub com histórico de commits (sem commit único "final")[cite: 1]
-- [x] `Dockerfile` multi-stage funcional + `.dockerignore`[cite: 1]
-- [x] `compose.yaml` com rede, volume nomeado, variáveis de ambiente e `healthcheck`[cite: 1]
-- [x] `.env.example` versionado e `.env` ignorado[cite: 1]
-- [x] Workflow do GitHub Actions funcionando[cite: 1]
-- [x] Um PR com o CI vermelho e depois verde (histórico visível)[cite: 1]
-- [x] Workflow de CD (`cd.yml`) configurado e publicando no Docker Hub[cite: 1]
-- [x] Secrets `DOCKERHUB_USERNAME` e `DOCKERHUB_TOKEN` configuradas[cite: 1]
-- [x] README preenchido com todos os prints pedidos e as respostas das perguntas[cite: 1, 2]
-- [x] Link do repositório enviado ao professor[cite: 1]
+- [x] Repositório **público** no GitHub com histórico de commits (sem commit único "final")
+- [x] `Dockerfile` multi-stage funcional + `.dockerignore`
+- [x] `compose.yaml` com rede, volume nomeado, variáveis de ambiente e `healthcheck`
+- [x] `.env.example` versionado e `.env` ignorado
+- [x] Workflow do GitHub Actions funcionando
+- [x] Um PR com o CI vermelho e depois verde (histórico visível)
+- [x] Workflow de CD (`cd.yml`) configurado e publicando no Docker Hub
+- [x] Secrets `DOCKERHUB_USERNAME` e `DOCKERHUB_TOKEN` configuradas
+- [x] README preenchido com todos os prints pedidos e as respostas das perguntas.
+- [x] Link do repositório enviado ao professor.
