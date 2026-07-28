@@ -111,16 +111,13 @@ Este repositório contém a conteinerização e automação de CI/CD para a apli
 * **Print 1 — Token criado no Docker Hub:**  
   ![Token criado no Docker Hub](docs/imagens/10-dockerhub-token.png)
 
-* **Print 2 — Secrets cadastrados no GitHub (`DOCKERHUB_USERNAME` e `DOCKERHUB_TOKEN`):**  
-  ![Secrets no GitHub](docs/imagens/11-github-secrets.png)
-
-* **Print 3 — Workflow de CD verde na aba Actions:**  
+* **Print 2 — Workflow de CD verde na aba Actions:**  
   ![Workflow CD Verde](docs/imagens/12-cd-actions-verde.png)
 
-* **Print 4 — Imagem publicada no Docker Hub:**  
+* **Print 3 — Imagem publicada no Docker Hub:**  
   ![Imagem no Docker Hub](docs/imagens/13-dockerhub-imagem.png)
 
-* **Print 5 — `docker pull` baixando a imagem publicada:**  
+* **Print 4 — `docker pull` baixando a imagem publicada:**  
   ![Docker Pull](docs/imagens/14-docker-pull.png)
 
 ### Respostas
